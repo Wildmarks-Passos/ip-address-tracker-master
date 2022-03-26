@@ -1,15 +1,17 @@
 import React from "react";
 import { Container, Title, SearchBar, Information } from "./styles"
 
-function IpInformation() {
+// Ip FHP = 170.83.249.220
 
+function IpInformation(props) {
+    
     return(
 
         <Container>
             <Title>IP Address Tracker</Title>
             <SearchBar>
-                <input></input>
-                <button>
+                <input onChange={props.handleChange} placeholder="Digite um endereço IP..."></input>
+                <button onClick={props.getIp}>
                     <svg xmlns="http://www.w3.org/2000/svg" 
                      width="11" 
                      height="14"><path 
@@ -21,7 +23,7 @@ function IpInformation() {
             </SearchBar>
             <Information>
                 <h2>ip address</h2>
-                <p>192.212.174.101</p>
+                <p>qualquer</p>
                 <h2>location</h2>
                 <p>Brooklyn, NY 10001</p>
                 <h2>timerzone</h2>

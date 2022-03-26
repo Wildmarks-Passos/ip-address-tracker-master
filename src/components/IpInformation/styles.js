@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 
     @media (max-width: 767px) {
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -13,6 +13,7 @@ export const Container = styled.div`
         top: 10px;
         left: 0;
         right: 0;
+        z-index: 9999;
     }
 `
 
@@ -55,6 +56,7 @@ export const SearchBar = styled.div`
 
 export const Information = styled.div`
 
+    display: none;
     width: 100%;
     text-align: center;
 
