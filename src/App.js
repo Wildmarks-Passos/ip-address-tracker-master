@@ -24,7 +24,7 @@ function App() {
   
         return res.json()
       }).then( res => {
-        console.log(res)
+        
         setData(res)
       })
 
