@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/ip-address-tracker-master/static/js/main.824c169c.js",
+    "static/media/pattern-bg.png": "/ip-address-tracker-master/static/media/pattern-bg.a60a3c85aa8b88aac4b7.png",
+    "index.html": "/ip-address-tracker-master/index.html",
+    "main.824c169c.js.map": "/ip-address-tracker-master/static/js/main.824c169c.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.824c169c.js"
+  ]
+}
