@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import GlobalStyles from './Styles/Global'
 
 import Attribution from "./components/Attribution/index";
@@ -8,30 +8,43 @@ import RenderMap from './components/Map';
 
 function App() {
 
-  const [ip, setIp] = useState('')
-  const [data, setData] = useState([])
+  const [ip, setIp] = useState('8.8.8.8')
+  const [data, setData] = useState({})
 
-    function getIp() {
+  useEffect(() => {
 
-        fetch(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_8a2K3V6V16EEn0fsWxchBPymNNhWi&ipAddress=${ip}`)
-        .then( res => {
+    return getIp()
+
+  }, [])
+
+  function getIp() {
     
-          return res.json()
-        }).then( res => {
-          console.log(res)
-          setData(res)
-        })
-    }
+    fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_fVJKvkaEa2GhjDLMvtvhnjmRsLxZB&ipAddress=${ip}`)
+      .then( res => {
+  
+        return res.json()
+      }).then( res => {
+        console.log(res)
+        setData(res)
+      })
+
+      setIp("")
+  }
   
   function handleChange( event ) {
 
     setIp(event.target.value)
-}
+  }
 
   return (
     <div className="App">
       <Header />
-      <IpInformation handleChange={handleChange} getIp={getIp} />
+      <IpInformation 
+        inputValue={ip}
+        ipData={data} 
+        handleChange={handleChange} 
+        getIp={getIp} 
+      />
       <RenderMap ipData={data} />
       <Attribution />
       <GlobalStyles />

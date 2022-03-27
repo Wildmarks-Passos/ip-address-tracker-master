@@ -20,7 +20,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
 
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
     margin: 32px 0;
 `
@@ -40,14 +40,14 @@ export const SearchBar = styled.div`
         height: 58px;
         padding-left: 25px;
         border: none;
-        border-radius: 10px 0 0 10px;
+        border-radius: 15px 0 0 15px;
     }
 
     button {
 
         padding: 20.5px;
         background-color: black;
-        border-radius: 0 10px 10px 0;
+        border-radius: 0 15px 15px 0;
 
         border: none;
         text-align: center;
@@ -56,14 +56,16 @@ export const SearchBar = styled.div`
 
 export const Information = styled.div`
 
-    display: none;
+    position: relative;
     width: 100%;
+    height: ${props => props.display === true ? "330px" : "50px"};
+    transition: 300ms;
     text-align: center;
-
-    border-radius: 10px;
-
-    padding: 30px 0;
-
+    
+    border-radius: 15px;
+    
+    padding: 30px 0 0 0;
+    overflow: hidden;
     background-color: #fff;
 
     h2 {
@@ -83,6 +85,27 @@ export const Information = styled.div`
         font-weight: 700;
 
         margin-bottom: 30px;
+    }
+
+    svg {
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        transform: ${props => props.display === true ? "rotate(90deg)" : "rotate(0deg)"};
+        transition: 300ms;
+
+        border: none;
+
+        &:hover {
+
+            cursor: pointer;
+        }
+
+        path {
+            stroke: #949494;
+        }
     }
 
 `
