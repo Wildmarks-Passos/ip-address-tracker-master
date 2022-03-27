@@ -10,7 +10,6 @@
 
 # production
 /build
-/ip-address-tracker-master
 
 # misc
 .DS_Store
