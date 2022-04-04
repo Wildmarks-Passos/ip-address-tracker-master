@@ -37,14 +37,22 @@ function IpInformation( props ) {
                     stroke="#FFF" 
                     stroke-width="3" 
                     d="M2 1l6 6-6 6"/></svg>
-                <h2>ip address</h2>
-                <p>{props.ipData.ip ? props.ipData.ip : ""}</p>
-                <h2>location</h2>
-                <p>{props.ipData.location ? `${props.ipData.location.city}, ${props.ipData.location.region} ${props.ipData.location.postalCode}` : ""}</p>
-                <h2>timerzone</h2>
-                <p>{props.ipData.location ? `UTC ${props.ipData.location.timezone}` : ""}</p>
-                <h2>isp</h2>
-                <p>{props.ipData.isp ? props.ipData.isp : ""}</p>
+                <div>
+                    <h2>ip address</h2>
+                    <p>{props.ipData.ip ? props.ipData.ip : ""}</p>
+                </div>
+                <div>
+                    <h2>location</h2>
+                    <p>{props.ipData.location ? `${props.ipData.location.city}, ${props.ipData.location.region} ${props.ipData.location.postalCode}` : ""}</p>
+                </div>
+                <div>
+                    <h2>timerzone</h2>
+                    <p>{props.ipData.location ? `UTC ${props.ipData.location.timezone}` : ""}</p>
+                </div>
+                <div>
+                    <h2>isp</h2>
+                    <p>{props.ipData.isp ? props.ipData.isp : ""}</p>
+                </div>
             </Information>
         </Container>
 
