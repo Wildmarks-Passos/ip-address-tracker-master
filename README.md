@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile 375 x 669 (Ip Information Hide)](./src/screenshot/Mobile_Hide_Information_Ip.jpeg)
-![Mobile 375 x 669 (Ip Information Show)](./src/screenshot/Mobile_Show_Information_Ip.jpeg)
+![Mobile 375 x 669 (Ip Information Hide)](./src/screenshot/Mobile_Hide_Information_Ip.jpg)
+![Mobile 375 x 669 (Ip Information Show)](./src/screenshot/Mobile_Show_Information_Ip.jpg)
 ![Mobile 1440 x 900](./src/screenshot/Desktop.JPG)
 
 ### Links
