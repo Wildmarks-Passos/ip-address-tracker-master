@@ -25,7 +25,13 @@ function App() {
         return res.json()
       }).then( res => {
         
-        setData(res)
+        if(res.code == 422) {
+
+          alert('Endereço ip inválido!')
+        }else {
+          
+          setData(res)
+        }
       })
 
       setIp("")
