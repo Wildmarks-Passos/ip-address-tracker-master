@@ -53,5 +53,5 @@ I intend to learn more about styled-components, SASS architecture and best pract
 
 ## Author
 
-- Frontend Mentor - [@Wildamrks-Passos](https://www.frontendmentor.io/profile/Wildmarks-Passos)
-- Linkedin - [@Wildamrks-Passos](https://www.linkedin.com/in/wildmarks-passos/)
+- Frontend Mentor - [@Wildmarks-Passos](https://www.frontendmentor.io/profile/Wildmarks-Passos)
+- Linkedin - [@Wildmarks-Passos](https://www.linkedin.com/in/wildmarks-passos/)
